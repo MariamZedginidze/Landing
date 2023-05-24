@@ -1,0 +1,474 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  position: relative;
+  min-height: 52.6875em;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  padding: 2em 2.25em 0 2.25em;
+  z-index: 1;
+}
+
+.landing-cta-btn {
+  background-color: #e5e5e5;
+  padding: 0.8125em 1.75em 0.9375em 1.75em;
+  border-radius: 7.5em;
+  border: none;
+  word-spacing: 0.0625em;
+  font-size: 1em;
+  font-weight: 500; /* doesn't have that type */
+  line-height: 1.25em;
+  letter-spacing: 0em;
+  text-align: center;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.landing-cta-btn-link {
+  color: #000000;
+}
+
+.landing-cta-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.scroll-container {
+  display: none;
+}
+.upArrow-btn {
+  display: none;
+}
+.mobile-thanks {
+  display: none;
+}
+
+.illustration-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 41.4%;
+  background-color: #caf450;
+}
+.mobile {
+  margin: 9.0625em 0 0 0;
+}
+.main-content-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 4em;
+  flex-basis: 52.75%;
+}
+.main-content {
+  max-width: 34.3125em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2em;
+}
+.main-heading-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.landing-heading {
+  font-size: 3.5em;
+  line-height: 60.48px;
+  letter-spacing: 0em;
+  text-align: left;
+  font-family: 'National2-Extrabold';
+  font-weight: 800;
+}
+
+.landing-body-text {
+  font-family: 'Inter';
+  color: #252525;
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 1.5625rem;
+}
+
+.landing-heading-span {
+  color: #caf450;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 30rem;
+}
+.email-input {
+  width: 30rem;
+  border-radius: 7.5em;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 1.46875rem 1.375rem 1.375rem 1.5rem;
+}
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  font-family: 'Test National 2';
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: rgba(29, 29, 39, 0.34);
+}
+.input-btn {
+  font-family: 'Test National 2';
+  font-size: 1em;
+  background-color: #000000;
+  color: white;
+  border: 0;
+  border-radius: 7.5em;
+  padding: 0.8125em 1.25em 0.9375em 1.25em;
+  box-shadow: 0px 0px 40px 0px #0000001f;
+  position: absolute;
+  right: 0.5625em;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  padding: 1em 2.25rem 0 2.25rem;
+  position: absolute;
+  bottom: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Test National 2';
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #00000080;
+}
+
+.aside-footer {
+  display: flex;
+  align-items: center;
+  gap: 32.2em;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 1.9em;
+  color: #00000080;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.34em;
+}
+
+.social-links-a {
+  cursor: pointer;
+  height: 16.25px;
+  width: 16.25px;
+}
+
+.copy {
+  font-family: 'Test National 2';
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1280px) {
+  @media screen and (orientation: landscape) {
+    nav {
+      padding: 2em 1.5em 0 1.5em;
+    }
+    .illustration-sidebar {
+      flex-basis: 27.5%;
+      /* min-width: 27.5em; */
+    }
+    .main-content-wrapper {
+      flex-basis: 36.5%;
+      padding-left: 2em;
+    }
+    .main-content {
+      min-width: 32em;
+    }
+    .landing-heading {
+      font-size: 3em;
+      line-height: 51.84px;
+    }
+    .landing-body-text {
+      font-size: 1em;
+      line-height: 20px;
+    }
+    .aside-footer {
+      gap: 19.7em;
+    }
+    footer {
+      padding: 1em 1.5rem 0 1.5rem;
+    }
+  }
+  @media screen and (orientation: portrait) {
+    main {
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  @media screen and (orientation: landscape) {
+    nav {
+      padding: 2em 1.5em 0 1.5em;
+    }
+    .illustration-sidebar {
+      flex-basis: 27.5%;
+      /* min-width: 27.5em; */
+    }
+    .main-content-wrapper {
+      flex-basis: 36.5%;
+      padding-left: 2em;
+    }
+    .main-content {
+      min-width: 32em;
+    }
+    .landing-heading {
+      font-size: 3em;
+      line-height: 51.84px;
+    }
+    .landing-body-text {
+      font-size: 1em;
+      line-height: 20px;
+    }
+    .aside-footer {
+      gap: 19.7em;
+    }
+    footer {
+      padding: 1em 1.5rem 0 1.5rem;
+    }
+  }
+  @media screen and (orientation: portrait) {
+    main {
+      flex-direction: column;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  nav {
+    padding: 2em 1.5em 0 1.5em;
+    position: fixed;
+  }
+  .illustration-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2.9em;
+    min-height: 64em;
+  }
+
+  .scroll-container {
+    margin-top: 3.65em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .arrow-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 7.5em;
+    padding: 0.5em;
+  }
+
+  .scroll-text {
+    font-family: 'Inter';
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  .main-content {
+    max-width: 39em;
+  }
+
+  .main-content-wrapper {
+    min-height: 64em;
+    padding-left: 1.51em;
+  }
+  .landing-heading {
+    max-width: 10em;
+    font-size: 3.5em;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0em;
+  }
+  .landing-body-text {
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0px;
+  }
+  .aside-footer {
+    gap: 11.4em;
+  }
+  .mobile {
+    width: 19em;
+    height: 40em;
+  }
+  .form {
+    max-width: 45.1em;
+  }
+  .email-input {
+    width: 60rem;
+  }
+  .upArrow-btn {
+    position: absolute;
+    bottom: 5.75rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.26rem;
+    width: 3.26rem;
+    border-radius: 9.75rem;
+    padding: 0.625rem;
+    border: none;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  nav {
+    padding: 1.5em 1em 0 1em;
+    justify-content: flex-start;
+    gap: 10.7em;
+    position: fixed;
+  }
+
+  .landing-cta-btn {
+    margin-top: 0.0625em;
+  }
+
+  .illustration-sidebar {
+    justify-content: center;
+    padding: 0;
+    min-height: 50.75em;
+  }
+
+  .mobile {
+    height: 28.25em;
+    width: 13.75em;
+  }
+
+  .email-input {
+    width: 60rem;
+  }
+  .main-content-wrapper {
+    margin-top: -8.2em;
+    padding-left: 1em;
+    max-width: 1.4375em;
+    min-height: 58em;
+    padding-left: 1em;
+  }
+
+  .upArrow-btn {
+    position: absolute;
+    bottom: 9rem;
+    right: 1.5rem;
+  }
+  .landing-heading {
+    font-size: 2.5em;
+    line-height: 51.84px;
+    font-weight: 800;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .landing-body-text {
+    font-family: 'Inter';
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+  .form {
+    width: 21.4375em;
+    position: relative;
+  }
+  .input-btn {
+    height: 3rem;
+    width: 5.75rem;
+    border-radius: 7.5rem;
+    padding: 0.75rem 1.5rem 0.75em 1.5rem;
+  }
+  footer {
+    position: absolute;
+    padding: 0;
+    bottom: 2em;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.6em;
+  }
+  .aside-footer {
+    padding: 0;
+    flex-direction: column;
+    gap: 1.6em;
+  }
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.4em;
+    color: #00000080 !important;
+  }
+  .mobile-thanks {
+    display: none;
+    height: 2.5rem;
+    width: 8.6875rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-size: p 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: center;
+    position: absolute;
+    top: 3em;
+  }
+}

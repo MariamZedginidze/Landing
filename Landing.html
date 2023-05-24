@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./Landing.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+  <body>
+    <section class="landing">
+      <main>
+        <nav>
+          <img
+            class="logo"
+            id="illustration-sidebar"
+            src="./Assets/black-logo.svg"
+          />
+          <section class="main-btn">
+            <a class="landing-cta-btn-link" href="./Features.html">
+              <button type="button" class="landing-cta-btn">Features</button>
+            </a>
+          </section>
+        </nav>
+        <section class="illustration-sidebar">
+          <img class="mobile" src="./Assets/mobile.svg" />
+          <section class="scroll-container">
+            <p class="scroll-text">Scroll down</p>
+            <button
+              class="arrow-btn"
+              onClick="document.getElementById('main-content').scrollIntoView()"
+            >
+              <img class="scroll-svg" src="./Assets/arrow.svg" />
+            </button>
+          </section>
+        </section>
+        <section id="main-content" class="main-content-wrapper">
+          <article class="main-content">
+            <article class="main-heading-paragraph">
+              <article class="landing-heading">
+                <span> Don't miss out on life,</span>
+                <span class="landing-heading-span">people & places</span>
+              </article>
+              <article class="landing-body-text">
+                Linq is the ultimate social networking app that helps you
+                connect with like-minded people around the world.
+              </article>
+            </article>
+
+            <form class="form">
+              <input
+                class="email-input"
+                id="email-input"
+                placeholder="Enter Email"
+                type="email"
+              />
+              <button type="submit" class="input-btn"></button>
+              <section class="mobile-thanks">😎 Thank you!</section>
+            </form>
+          </article>
+        </section>
+        <footer>
+          <section class="aside-footer">
+            <section class="links">
+              <span><a href="./Privacy.html">Privacy</a></span>
+              <span><a href="./Terms.html">Terms</a></span>
+              <span><a href="./FAQ.html">FAQs</a></span>
+            </section>
+            <section class="social-icons">
+              <a
+                href="https://www.instagram.com/letslinq.co/"
+                class="social-links-a"
+              >
+                <img class="social-icons-svg" src="./Assets/instagram.svg"
+              /></a>
+              <a href="https://www.facebook.com/letslinq">
+                <img class="-svg" src="./Assets/facebook.svg" />
+              </a>
+              <a href="https://twitter.com/LetsLinqCo">
+                <img class="-svg" src="./Assets/twitter.svg" />
+              </a>
+              <a href="https://www.linkedin.com/company/letslinq/">
+                <img class="-svg" src="./Assets/linkedin.svg" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCaZW6YRYV2x8iDWJ3Ech-sQ
+              "
+              >
+                <img class="-svg" src="./Assets/youtube.svg" />
+              </a>
+            </section>
+          </section>
+          <section class="copy">
+            <img class="copyright" src="./Assets/copyright.svg" />
+            2023 Linq Inc.
+          </section>
+        </footer>
+        <button class="upArrow-btn" onClick="window.scrollTo(100, 100);">
+          <img class="scroll-svg" src="./Assets/upArrow.svg" />
+        </button>
+      </main>
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+    integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="./Landing.js"></script>
+</html>
